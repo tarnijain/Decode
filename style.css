@@ -1,0 +1,234 @@
+img{
+    width: 149.78px;
+    height: 184.13;
+    float: left;
+}
+
+.D{
+  position: absolute;
+  top : 0;
+  left: 0;
+}
+
+h1{
+  position: absolute;
+  top: 40px;
+  left: 89px;
+  font-size: 50px;
+  color: #FFEE32;
+}
+h2{
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+
+.s1{
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  font-size: 20px;
+  color: #FFF2C9;
+}
+
+.button{
+  position: absolute;
+  top: 210px;
+  left: 54px;
+  background-color: #FFDFCC;
+  text-align: left;
+  padding-right:29%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: box-shadow 0.3s ease;
+}
+.button:hover{
+  box-shadow:  -3px 5px 2px #8338EC;
+}
+
+
+.Page1 {
+  
+  font-family: Arial, sans-serif;
+  color: white;
+  border-radius: 54px;
+  border-top-left-radius: 0%;
+  background: #0F140E; 
+  width: 70%;
+  height: 500px;
+}
+
+.info{
+  color : black;
+  display: flex;
+  gap: 25px;
+  padding-left : 16px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 5px;
+}
+
+.card{
+  background: white;
+  padding-left: 5px;
+  padding-bottom: 25px;
+  padding-right: 5px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow:  -6px 8px 2px #62544D;
+  font-weight: bold;
+}
+.pg1{
+    display: flex;
+    gap: 30px;
+
+}
+body{
+  
+  padding-left: 39px;
+  padding-top : 35px ;
+  padding-right: 10px;
+}
+
+
+.login {
+            background: #0F140E;
+            border-radius: 54px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*padding: 20px 30px;*/
+            max-width: 430px;
+}
+
+.s2{
+  color: #FFEE32;
+  padding-top: -15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.input {
+            width: 100%;
+            max-width: 300px;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+         .button2 {
+            width: 100%;
+            max-width: 300px;
+            padding: 12px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease;
+        }
+
+.button2:hover {
+            transform: translateY(-2px);
+            box-shadow: -3px 4px 2px rgba(255, 255, 255, 0.2);
+        }
+
+    
+    
+.login a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .login a:hover {
+            text-decoration: underline;
+            color: #373deb;
+        }
+
+.s3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.ts{
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+
+.tp{
+    display: flex;
+    gap: 41px;
+
+}
+
+.topics{
+    background: black;
+    border-radius: 20px;
+    width: 250px;
+    height: 190px;
+    
+}
+
+.lc{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+
+}
+
+.more-topics {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.mt {
+  position: relative;
+  top: 20px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.mt_track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+ 
+}
+
+.mt:hover .mt_track{
+  animation-play-state: paused;
+}
+
+.topic{
+   background: black;
+    border-radius: 30px;
+    width: 150px;
+    height: 100px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

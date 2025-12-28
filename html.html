@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - Decode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 600px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            background-color: #1a1a1a;
+            width: 280px;
+            padding: 30px 0;
+            color: white;
+        }
+
+        .nav-item {
+            padding: 18px 30px;
+            color: white;
+            font-size: 18px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover {
+            background-color: #2a2a2a;
+            padding-left: 40px;
+        }
+
+        .nav-item.active {
+            background-color: #FFEB3B;
+            color: black;
+            font-weight: bold;
+            border-radius: 15px;
+            margin: 0 20px;
+            padding-left: 20px;
+            border-bottom: none;
+        }
+
+        /* Main Content Area */
+        .content {
+            flex: 1;
+            padding: 50px 60px;
+            background-color: #0a0a0a;
+            color: white;
+            position: relative;
+        }
+
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin-left: 20px;
+        }
+
+        .content li {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .content a {
+            color: white;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="nav-item active">HTML Basics</div>
+            <div class="nav-item">Structure</div>
+            <div class="nav-item">Elements</div>
+            <div class="nav-item">Attributes</div>
+            <div class="nav-item">Forms</div>
+            <div class="nav-item">Tables</div>
+            <div class="nav-item">Lists</div>
+            <div class="nav-item">Links</div>
+            <div class="nav-item">Images</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages.</h1>
+            
+            <ul>
+                <li>It defines the layout of a webpage using elements and tags, allowing for the display of text, images, <a href="#">links</a>, and <a href="#">multimedia</a> content.</li>
+                <li>As the foundation of nearly all <a href="#">websites</a>, HTML is used in over 95% of all <a href="#">web pages</a> today, making it an essential part of modern <a href="#">web development</a>.</li>
+            </ul>
+
+            <!-- Logo -->
+            <div class="logo">
+                <svg viewBox="0 0 150 184" fill="none">
+                    <circle cx="75" cy="75" r="60" fill="#FF006E"/>
+                    <circle cx="100" cy="50" r="40" fill="#FFBE0B"/>
+                    <rect x="40" y="80" width="70" height="104" rx="15" fill="#8338EC"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Content for each topic
+        const contentData = {
+            'HTML Basics': {
+                title: 'HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages.',
+                points: [
+                    'It defines the layout of a webpage using elements and tags, allowing for the display of text, images, <a href="#">links</a>, and <a href="#">multimedia</a> content.',
+                    'As the foundation of nearly all <a href="#">websites</a>, HTML is used in over 95% of all <a href="#">web pages</a> today, making it an essential part of modern <a href="#">web development</a>.'
+                ]
+            },
+            'Structure': {
+                title: 'HTML documents have a specific structure that browsers understand.',
+                points: [
+                    'Every HTML document starts with a <a href="#">DOCTYPE</a> declaration that tells the browser which version of HTML is being used.',
+                    'The basic structure includes the <a href="#">html</a>, <a href="#">head</a>, and <a href="#">body</a> tags that organize your content.',
+                    'The head section contains <a href="#">metadata</a> like the page title, while the body contains the visible content.'
+                ]
+            },
+            'Elements': {
+                title: 'HTML elements are the building blocks of web pages.',
+                points: [
+                    'Elements are created using <a href="#">tags</a> that wrap around content, like &lt;p&gt; for paragraphs or &lt;h1&gt; for headings.',
+                    'Most elements have an opening tag and a closing tag, though some like &lt;img&gt; are <a href="#">self-closing</a>.',
+                    'Elements can be <a href="#">nested</a> inside each other to create complex structures and layouts.'
+                ]
+            },
+            'Attributes': {
+                title: 'Attributes provide additional information about HTML elements.',
+                points: [
+                    'Attributes are added to the opening tag and usually come in <a href="#">name-value pairs</a> like class="container".',
+                    'Common attributes include <a href="#">id</a> for unique identification, <a href="#">class</a> for styling, and <a href="#">href</a> for links.',
+                    'Some attributes like <a href="#">disabled</a> or <a href="#">required</a> are boolean and don\'t need values.'
+                ]
+            },
+            'Forms': {
+                title: 'HTML forms allow users to input and submit data.',
+                points: [
+                    'Forms use the <a href="#">&lt;form&gt;</a> element and can contain various input types like text fields, checkboxes, and buttons.',
+                    'The <a href="#">action</a> attribute specifies where to send form data, while <a href="#">method</a> determines how to send it (GET or POST).',
+                    'Form validation can be done using HTML5 attributes like <a href="#">required</a>, <a href="#">pattern</a>, and <a href="#">min/max</a>.'
+                ]
+            },
+            'Tables': {
+                title: 'Tables organize data into rows and columns.',
+                points: [
+                    'Tables use <a href="#">&lt;table&gt;</a>, <a href="#">&lt;tr&gt;</a> (table row), <a href="#">&lt;th&gt;</a> (header), and <a href="#">&lt;td&gt;</a> (data) tags.',
+                    'The <a href="#">&lt;thead&gt;</a>, <a href="#">&lt;tbody&gt;</a>, and <a href="#">&lt;tfoot&gt;</a> elements help organize table structure.',
+                    'Tables should be used for <a href="#">tabular data</a>, not for page layout (use CSS for that!).'
+                ]
+            },
+            'Lists': {
+                title: 'Lists help organize related items in an easy-to-read format.',
+                points: [
+                    '<a href="#">Unordered lists</a> (&lt;ul&gt;) display items with bullets, perfect for non-sequential information.',
+                    '<a href="#">Ordered lists</a> (&lt;ol&gt;) display items with numbers, great for step-by-step instructions.',
+                    '<a href="#">Description lists</a> (&lt;dl&gt;) pair terms with definitions, useful for glossaries and metadata.'
+                ]
+            },
+            'Links': {
+                title: 'Links connect web pages together, creating the "web" in World Wide Web.',
+                points: [
+                    'The <a href="#">&lt;a&gt;</a> (anchor) tag creates links using the <a href="#">href</a> attribute to specify the destination.',
+                    'Links can be <a href="#">absolute</a> (full URLs) or <a href="#">relative</a> (paths within your site).',
+                    'The <a href="#">target</a> attribute controls where the link opens, like target="_blank" for a new tab.'
+                ]
+            },
+            'Images': {
+                title: 'Images make web pages more engaging and informative.',
+                points: [
+                    'The <a href="#">&lt;img&gt;</a> tag displays images using the <a href="#">src</a> attribute to specify the image location.',
+                    'Always include an <a href="#">alt</a> attribute that describes the image for accessibility and SEO.',
+                    'Use <a href="#">width</a> and <a href="#">height</a> attributes to prevent layout shifts while images load.'
+                ]
+            }
+        };
+
+        // Add click functionality to navigation items
+        const navItems = document.querySelectorAll('.nav-item');
+        const contentTitle = document.querySelector('.content h1');
+        const contentList = document.querySelector('.content ul');
+        
+        navItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove active class from all items
+                navItems.forEach(nav => nav.classList.remove('active'));
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Get the topic name
+                const topic = this.textContent;
+                
+                // Update content
+                if (contentData[topic]) {
+                    contentTitle.textContent = contentData[topic].title;
+                    contentList.innerHTML = contentData[topic].points
+                        .map(point => `<li>${point}</li>`)
+                        .join('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
