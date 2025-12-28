@@ -27,6 +27,11 @@ simple, clear explanations without heavy technical jargon.
 - Database-driven topics
 - User progress tracking
 
+ 
+
+<img width="1883" height="865" alt="Screenshot 2025-12-29 001801" src="https://github.com/user-attachments/assets/30422daa-57cf-4712-877c-f4aa07a3c41b" />
+<img width="1812" height="878" alt="image" src="https://github.com/user-attachments/assets/59d72ea5-84f9-468d-b54b-dab546507443" />
+
 
 
 Made with ❤️ as a learning project.
